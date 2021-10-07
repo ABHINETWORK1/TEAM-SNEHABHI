@@ -1,5 +1,5 @@
-# AdityaPlayer (Telegram bot project )
-# Copyright (C)  Aditya Halder
+# SNEHABHI SERVER (Telegram bot project )
+# Copyright (C)  SNEHABHI SERVER
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -18,9 +18,9 @@
 from pyrogram import Client, filters
 from pyrogram.errors import UserAlreadyParticipant
 import asyncio
-from AdityaPlayer.helpers.decorators import authorized_users_only, errors
-from AdityaPlayer.services.callsmusic.callsmusic import client as USER
-from AdityaPlayer.config import SUDO_USERS
+from SnehabhiServer.helpers.decorators import authorized_users_only, errors
+from SnehabhiServer.services.callsmusic.callsmusic import client as USER
+from SnehabhiServer.config import SUDO_USERS
 
 @Client.on_message(filters.command(["userbotjoin"]) & ~filters.private & ~filters.bot)
 @authorized_users_only
