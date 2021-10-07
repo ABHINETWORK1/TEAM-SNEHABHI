@@ -1,5 +1,5 @@
-# AdityaPlayer (Telegram bot project)
-# Copyright (C) 2021  AdityaHalder
+# SNEHABHI SERVER (Telegram bot project)
+# Copyright (C) 2021  SNEHABHI SERVER
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
 # published by the Free Software Foundation, either version 3 of the
@@ -31,30 +31,30 @@ from pyrogram.types import Voice
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from Python_ARQ import ARQ
 from youtube_search import YoutubeSearch
-from AdityaPlayer.modules.play import generate_cover
-from AdityaPlayer.modules.play import arq
-from AdityaPlayer.modules.play import cb_admin_check
-from AdityaPlayer.modules.play import transcode
-from AdityaPlayer.modules.play import convert_seconds
-from AdityaPlayer.modules.play import time_to_seconds
-from AdityaPlayer.modules.play import changeImageSize
-from AdityaPlayer.config import BOT_NAME as bn
-from AdityaPlayer.config import DURATION_LIMIT
-from AdityaPlayer.config import UPDATES_CHANNEL as updateschannel
-from AdityaPlayer.config import que
-from AdityaPlayer.function.admins import admins as a
-from AdityaPlayer.helpers.errors import DurationLimitError
-from AdityaPlayer.helpers.decorators import errors
-from AdityaPlayer.helpers.admins import get_administrators
-from AdityaPlayer.helpers.channelmusic import get_chat_id
-from AdityaPlayer.helpers.decorators import authorized_users_only
-from AdityaPlayer.helpers.filters import command, other_filters
-from AdityaPlayer.helpers.gets import get_file_name
-from AdityaPlayer.services.callsmusic import callsmusic
-from AdityaPlayer.services.callsmusic.callsmusic import client as USER
-from AdityaPlayer.services.converter.converter import convert
-from AdityaPlayer.services.downloaders import youtube
-from AdityaPlayer.services.queues import queues
+from SnehabhiServer.modules.play import generate_cover
+from SnehabhiServer.modules.play import arq
+from SnehabhiServer.modules.play import cb_admin_check
+from SnehabhiServer.modules.play import transcode
+from SnehabhiServer.modules.play import convert_seconds
+from SnehabhiServer.modules.play import time_to_seconds
+from SnehabhiServer.modules.play import changeImageSize
+from SnehabhiServer.config import BOT_NAME as bn
+from SnehabhiServer.config import DURATION_LIMIT
+from SnehabhiServer.config import UPDATES_CHANNEL as updateschannel
+from SnehabhiServer.config import que
+from SnehabhiServer.function.admins import admins as a
+from SnehabhiServer.helpers.errors import DurationLimitError
+from SnehabhiServer.helpers.decorators import errors
+from SnehabhiServer.helpers.admins import get_administrators
+from SnehabhiServer.helpers.channelmusic import get_chat_id
+from SnehabhiServer.helpers.decorators import authorized_users_only
+from SnehabhiServer.helpers.filters import command, other_filters
+from SnehabhiServer.helpers.gets import get_file_name
+from SnehabhiServer.services.callsmusic import callsmusic
+from SnehabhiServer.services.callsmusic.callsmusic import client as USER
+from Snehabhiserver.services.converter.converter import convert
+from SnehabhiServer.services.downloaders import youtube
+from SnehabhiServer.services.queues import queues
 
 chat_id = None
 
@@ -128,8 +128,8 @@ def r_ply(type_):
             ],
             
                 [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"{https://t.me/adityaserver}"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"{https://t.me/adityadiscus}"),
+                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"{https://t.me/ABHI_NETWORK1}"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"{https://t.me/SNEHABHI_SERVER}"),
                 ],
                 
             [InlineKeyboardButton("❌ Ƈɭøsɘ ❌", "ccls")],
@@ -327,8 +327,8 @@ async def m_cb(b, cb):
                 ],
                 
                 [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"{https://t.me/adityaserver}"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"{https://t.me/adityadiscus}"),
+                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"{https://t.me/ABHI_NETWORK11}"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"{https://t.me/SNEHABHI_SERVER}"),
                 ],
                 
                 [InlineKeyboardButton("❌ Ƈɭøsɘ ❌", "ccls")],
@@ -474,15 +474,15 @@ async def play(_, message: Message):
                     InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="cmenu"),
                 ],
                 [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"{https://t.me/adityaserver}"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"{https://t.me/adityadiscus}"),
+                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"{https://t.me/ABHI_NETWORK1}"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"{https://t.me/SNEHABHI_SERVER}"),
                 ],
                 [InlineKeyboardButton(text="❌ Ƈɭøsɘ ❌", callback_data="ccls")],
             ]
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/793b7adbe8f4ca26bd7d9.png"
+        thumb_name = "https://telegra.ph/file/42317cd6618d736284b91.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Łøƈɑɭɭƴ Ʌɗɗɘɗ"
@@ -570,8 +570,8 @@ async def play(_, message: Message):
                     InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="cmenu"),
                 ],
                 [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"{https://t.me/adityaserver}"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"{https://t.me/adityadiscus}"),
+                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"{https://t.me/ABHI_NETWORK1}"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"{https://t.me/SNEHABHI_SERVER}"),
                 ],
                 [InlineKeyboardButton(text="❌ Ƈɭøsɘ ❌", callback_data="ccls")],
             ]
@@ -707,8 +707,8 @@ async def deezer(client: Client, message_: Message):
                 InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="cmenu"),
             ],
                 [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"{https://t.me/adityaserver}"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"{https://t.me/adityadiscus}"),
+                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"{https://t.me/ABHI_NETWORK1}"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"{https://t.me/SNEHABHI_SERVER}"),
                 ],
             
             [InlineKeyboardButton(text="❌ Ƈɭøsɘ ❌", callback_data="ccls")],
@@ -828,7 +828,7 @@ async def jiosaavn(client: Client, message_: Message):
         sname = songs.result[0].song
         slink = songs.result[0].media_url
         ssingers = songs.result[0].singers
-        sthumb = "https://telegra.ph/file/f6086f8909fbfeb0844f2.png"
+        sthumb = "https://telegra.ph/file/42317cd6618d736284b91.jpg"
         sduration = int(songs.result[0].duration)
     except Exception as e:
         await res.edit("**🎶 Søɳʛ Ɲøʈ Føʋɳɗ, Ƭɤƴ Ʌɳøʈɦɘɤ Søɳʛ øɤ Ɱɑƴɓɘ Sƥɘɭɭ ɩʈ Ƥɤøƥɘɤɭƴ.**")
@@ -841,8 +841,8 @@ async def jiosaavn(client: Client, message_: Message):
                 InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="cmenu"),
             ],
                 [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"{https://t.me/adityaserver}"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"{https://t.me/adityadiscus}"),
+                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"{https://t.me/ABHI_NETWORK1}"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"{https://t.me/SNEHABHI_SERVER}"),
                 ],
             [InlineKeyboardButton(text="❌ Ƈɭøsɘ ❌", callback_data="ccls")],
         ]
