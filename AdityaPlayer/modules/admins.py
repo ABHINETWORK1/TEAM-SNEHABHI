@@ -38,7 +38,7 @@ async def update_admin(client, message: Message):
             for member in await message.chat.get_members(filter="administrators")
         ],
     )
-    await message.reply_text("**✅ Ʌɗɱɩɳ Ƈɑƈɦɘ Ʀɘƒɤɘsɦɘɗ ❗️**")
+    await message.reply_text("**@SNEHABHI_SERVER ✨ 𝐀𝐃𝐌𝐈𝐍𝐂𝐀𝐂𝐇𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐃 ✨**")
 
 
 @Client.on_message(command("pause") & other_filters)
@@ -49,10 +49,10 @@ async def pause(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "paused"
     ):
-        await message.reply_text("**🚫 Ɲøʈɦɩɳʛ ɩs Ƥɭɑƴɩɳʛ ❗️**")
+        await message.reply_text("**@SNEHABHI_SERVER 😗 𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗜𝘀 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 ✨**")
     else:
         callsmusic.pytgcalls.pause_stream(chat_id)
-        await message.reply_text("**▶ ️Sʋƈƈɘssƒʋɭɭƴ Ƥɑʋsɘɗ ❗**️")
+        await message.reply_text("**@SNEHABHI_SERVER 😗 𝗣𝗮𝘂𝘀𝗲𝗱 😔🤟**️")
 
 
 @Client.on_message(command("resume") & other_filters)
@@ -63,10 +63,10 @@ async def resume(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "playing"
     ):
-        await message.reply_text("**🚫 Ɲøʈɦɩɳʛ ɩs Ƥɑʋsɘɗ ❗**")
+        await message.reply_text("**@SNEHABHI_SERVER 😗 𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗜𝘀 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 ✨**")
     else:
         callsmusic.pytgcalls.resume_stream(chat_id)
-        await message.reply_text("**⏸ ️Sʋƈƈɘssƒʋɭɭƴ Ʀɘsʋɱɘɗ ❗**")
+        await message.reply_text("**@SNEHABHI_SERVER 😗 𝗥𝗲𝘀𝘂𝗺𝗲𝗱 ❤️🤟**")
 
 
 @Client.on_message(command("end") & other_filters)
@@ -75,7 +75,7 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("**🚫 Ɲøʈɦɩɳʛ ɩs Sʈɤɘɑɱɩɳʛ ❗**")
+        await message.reply_text("**@SNEHABHI_SERVER 😗 𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗜𝘀 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 ✨**")
     else:
         try:
             callsmusic.queues.clear(chat_id)
@@ -83,7 +83,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(chat_id)
-        await message.reply_text("**❌ Sʋƈƈɘssƒʋɭɭƴ Sʈøƥƥɘɗ Sʈɤɘɑɱɩɳʛ ❗**")
+        await message.reply_text("**@SNEHABHI_SERVER 😗 𝗦𝘁𝗼𝗽 🛑 𝗦𝘁𝗿𝗲𝗮𝗺𝗶𝗻𝗴 ✨**")
 
 
 @Client.on_message(command("skip") & other_filters)
@@ -93,7 +93,7 @@ async def skip(_, message: Message):
     global que
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("**🚫 Ɲøʈɦɩɳʛ ɩs Ƥɭɑƴɩɳʛ ʈø Sƙɩƥ ❗**")
+        await message.reply_text("**@SNEHABHI_SERVER 😗 𝗡𝗼𝘁𝗵𝗶𝗻𝗴 😔 𝗜𝘀 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 🎶 𝗧𝗼 𝗦𝗸𝗶𝗽 💫**")
     else:
         callsmusic.queues.task_done(chat_id)
 
@@ -109,7 +109,7 @@ async def skip(_, message: Message):
         skip = qeue.pop(0)
     if not qeue:
         return
-    await message.reply_text(f"**⏩ Sƙɩƥƥɘɗ** **{skip[0]}**\n**▶️ Ɲøω Ƥɭɑƴɩɳʛ** **{qeue[0][0]}**")
+    await message.reply_text(f"**@SNEHABHI SERVER 😗 𝗦𝗸𝗶𝗽 💫 𝗧𝗵𝗲 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 😊 𝗦𝗼𝗻𝗴 ❤️🤟** **{skip[0]}**\n**▶️ Ɲøω Ƥɭɑƴɩɳʛ** **{qeue[0][0]}**")
 
 
 @Client.on_message(filters.command("admincache"))
@@ -122,5 +122,5 @@ async def admincache(client, message: Message):
             for member in await message.chat.get_members(filter="administrators")
         ],
     )
-    await message.reply_text("**✅ Ʌɗɱɩɳ Ƈɑƈɦɘ Ʀɘƒɤɘsɦɘɗ ❗️**")
+    await message.reply_text("**@SNEHABHI_SERVER ✨ 𝐀𝐃𝐌𝐈𝐍𝐂𝐀𝐂𝐇𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐃 ✨**")
 
