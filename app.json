@@ -1,9 +1,9 @@
 {
   "name": "AdityaPlayer",
-  "logo": "https://telegra.ph/file/abbba622b483d56d79688.png",
+  "logo": "https://telegra.ph/file/42317cd6618d736284b91.png",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/AdityaHalder/AdityaPlayer",
+  "repository": "https://github.com/ABHINETWORK1/TEAM-SNEHABHI",
   "stack": "container",
   "buildpacks": [
    {
@@ -31,12 +31,12 @@
     "SUPPORT_GROUP": {
       "description": "Your Music Player Support Group Without @ [Leave this if you don't have one]",
       "required": false,
-      "value": "AdityaDiscus"
+      "value": "SNEHABHI_SERVER"
     },
     "PROJECT_NAME": {
       "description": "Your Music Player Project Name.",
       "required": false,
-      "value": "Aditya Player"
+      "value": "SNEHABHI MUSIC SERVER"
     },
     "ASSISTANT_NAME": {
       "description": "Your Music Player's Assistant Username Without @.",
