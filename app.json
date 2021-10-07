@@ -1,5 +1,5 @@
 {
-  "name": "AdityaPlayer",
+  "name": "SNEHABHI MUSIC SERVER",
   "logo": "https://telegra.ph/file/42317cd6618d736284b91.png",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
@@ -50,7 +50,7 @@
     "BG_IMAGE": {
       "description": "Bacground Image [Optional].",
       "required": false,
-      "value": " https://telegra.ph/file/793b7adbe8f4ca26bd7d9.png"
+      "value": " https://telegra.ph/file/42317cd6618d736284b91.png"
     },     
     "UPDATES_CHANNEL": {
       "description": "Updates Channel without @ [Leave this if you don't have one].",
