@@ -1,5 +1,5 @@
-# AdityaPlayer (Telegram bot project )
-# Copyright (C) 2021  Aditya Halder
+# SNEHABHI PLAYER (Telegram bot project )
+# Copyright (C) 2021  SNEHABHI SERVER
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -21,9 +21,9 @@ class Messages():
       HELP_MSG = [
         ".",
 f"""
-**👋 Ɦɘƴ Wɘɭƈøɱɘ Ɓɑƈƙ ʈø {PROJECT_NAME}**
+**👋 Ɦɘƴ Wɘɭƈøɱɘ Ɓɑƈƙ ʈø {SNEHABHI MUSIC SERVER}**
 
-**♻️ {PROJECT_NAME} Ƈɑɳ Ƥɭɑƴ Ɱʋsɩƈ ɩɳ Yøʋɤ Ɠrøʋƥs & Ƈɦɑɳɳɘɭs Vøɩƈɘ Ƈɦɑʈs.**
+**♻️ {SNEHABHI MUSIC SERVER} Ƈɑɳ Ƥɭɑƴ Ɱʋsɩƈ ɩɳ Yøʋɤ Ɠrøʋƥs & Ƈɦɑɳɳɘɭs Vøɩƈɘ Ƈɦɑʈs.**
 
 **🤖 Ʌssɩsʈɑɲʈ Ʋsɘɤɓøʈ >> @{ASSISTANT_NAME}**\n\n**Ƈɭɩƈƙ Ɲɘxʈ ƒøɤ Iɳsʈɤʋƈʈɩøɳs ...**
 """,
