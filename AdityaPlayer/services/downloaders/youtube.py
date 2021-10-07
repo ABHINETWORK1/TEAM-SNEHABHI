@@ -1,5 +1,5 @@
 # SNEHABHI SERVER - Telegram bot for streaming audio in group calls
-# Copyright (C)  Aditya Halder
+# Copyright (C)  SNEHABHI SERVER
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-# Modified by Inukaasith
+# Modified by ABHISHEK
 
 
 from os import path
