@@ -1,5 +1,5 @@
-# Aditya Player - Telegram bot for streaming audio in group calls
-# Copyright (C) 2021  Aditya Halder
+# SNEHABHI SERVER - Telegram bot for streaming audio in group calls
+# Copyright (C) 2021  SNEHABHI SERVER
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -19,8 +19,8 @@ from typing import List
 
 from pyrogram.types import Chat
 
-from AdityaPlayer.function.admins import get as gett
-from AdityaPlayer.function.admins import set
+from SnehabhiServer.function.admins import get as gett
+from SnehabhiServer.function.admins import set
 
 
 async def get_administrators(chat: Chat) -> List[int]:
