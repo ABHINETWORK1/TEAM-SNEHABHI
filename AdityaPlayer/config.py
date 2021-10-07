@@ -1,4 +1,4 @@
-# SnehabhiServer -  Telegram bot project
+# SNEHABHI SERVER -  Telegram bot project
 # Copyright (C)  SNEHABHI SERVER
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
