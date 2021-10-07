@@ -1,5 +1,5 @@
-# AdityaPlayer (Telegram bot project )
-# Copyright (C)  Aditya Halder
+# SNEHABHI SERVER (Telegram bot project )
+# Copyright (C)  SNEHABHI SERVER
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -30,12 +30,12 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Ʌɗɗ Ɱɘ ʈø Yøʋɤ Ɠɤøʋƥ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                        "➕ Ʌɗɗ Ɱɘ ʈø Yøʋɤ Ɠɤøʋƥ ➕", url=f"https://t.me/LIVE_LIKE_LIFE")],
                 [
                     InlineKeyboardButton(
-                        "🌐 Ʋƥɗɑʈɘs", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        "🌐 Ʋƥɗɑʈɘs", url=f"https://t.me/ABHI_NETWORK1"), 
                     InlineKeyboardButton(
-                        "💬 Sʋƥƥøɤʈ", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "💬 Sʋƥƥøɤʈ", url=f"https://t.me/SNEHABHI-SERVER")
                 ],[
                     InlineKeyboardButton(
                         "🤖 Ƈøŋʈɑƈʈ ʈø  Ɱƴ Øωɳɘɤ 🤖", url=f"https://t.me/{SOURCE_CODE}")
