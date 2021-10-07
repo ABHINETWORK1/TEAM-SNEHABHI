@@ -106,5 +106,5 @@ For linked group admins only:
 
 ### Credits
 #### Special Credits
-- [ABHISHEK](http://github.com/rojserbes): Callsmusic Developer
-
+<a href="https://t.me/SNEHU_IS_MINE"><img src="https://img.shields.io/badge/REPO-REPL%20CREATOR-blue.svg?style=for-the-badge&logo=Telegram">
+<a href="https://t.me/ABHI_IS_MINE"><img src="https://img.shields.io/badge/REPO-EDITER%20DEVELOPER-blue.svg?style=for-the-badge&logo=Telegram">
