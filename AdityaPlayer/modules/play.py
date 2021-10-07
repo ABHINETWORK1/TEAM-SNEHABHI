@@ -1,5 +1,5 @@
-# AdityaPlayer (Telegram bot project)
-# Copyright (C)  AdityaHalder
+# Snehabhi Server (Telegram bot project)
+# Copyright (C)  SNEHABHI SERVER
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
 # published by the Free Software Foundation, either version 3 of the
@@ -32,24 +32,24 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from Python_ARQ import ARQ
 from youtube_search import YoutubeSearch
 
-from AdityaPlayer.config import ARQ_API_KEY
-from AdityaPlayer.config import BOT_NAME as bn
-from AdityaPlayer.config import DURATION_LIMIT
-from AdityaPlayer.config import UPDATES_CHANNEL as updateschannel
-from AdityaPlayer.config import que
-from AdityaPlayer.function.admins import admins as a
-from AdityaPlayer.helpers.admins import get_administrators
-from AdityaPlayer.helpers.channelmusic import get_chat_id
-from AdityaPlayer.helpers.errors import DurationLimitError
-from AdityaPlayer.helpers.decorators import errors
-from AdityaPlayer.helpers.decorators import authorized_users_only
-from AdityaPlayer.helpers.filters import command, other_filters
-from AdityaPlayer.helpers.gets import get_file_name
-from AdityaPlayer.services.callsmusic import callsmusic
-from AdityaPlayer.services.callsmusic.callsmusic import client as USER
-from AdityaPlayer.services.converter.converter import convert
-from AdityaPlayer.services.downloaders import youtube
-from AdityaPlayer.services.queues import queues
+from SnehabhiServer.config import ARQ_API_KEY
+from SnehabhiServer.config import BOT_NAME as bn
+from SnehabhiServer.config import DURATION_LIMIT
+from SnehabhiServer.config import UPDATES_CHANNEL as updateschannel
+from SnehabhiServer.config import que
+from SnehabhiServer.function.admins import admins as a
+from SnehabhiServer.helpers.admins import get_administrators
+from SnehabhiServer.helpers.channelmusic import get_chat_id
+from SnehabhiServer.helpers.errors import DurationLimitError
+from SnehabhiServer.helpers.decorators import errors
+from SnehabhiServer.helpers.decorators import authorized_users_only
+from SnehabhiServer.helpers.filters import command, other_filters
+from SnehabhiServer.helpers.gets import get_file_name
+from SnehabhiServer.services.callsmusic import callsmusic
+from SnehabhiServer.services.callsmusic.callsmusic import client as USER
+from SnehabhiServer.services.converter.converter import convert
+from SnehabhiServer.services.downloaders import youtube
+from SnehabhiServer.services.queues import queues
 
 aiohttpsession = aiohttp.ClientSession()
 chat_id = None
@@ -195,10 +195,10 @@ def r_ply(type_):
                 InlineKeyboardButton("📝 Ƥɭɑƴɭɩsʈ 📝", "playlist"),
             ],
             [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/adityaserver"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/adityadiscus"),
+                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
             ],
-            [InlineKeyboardButton("❌ Ƈɭøsɘ ❌", "cls")],
+
         ]
     )
     return mar
@@ -416,10 +416,10 @@ async def m_cb(b, cb):
                     InlineKeyboardButton("📝 Ƥɭɑƴɭɩsʈ 📝", "playlist"),
                 ],
                 [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/adityaserver"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/adityadiscus"),
+                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
                ],
-                [InlineKeyboardButton("❌ Ƈɭøsɘ ❌", "cls")],
+
             ]
         )
         await cb.message.edit(stats, reply_markup=marr)
@@ -554,15 +554,15 @@ async def yt(_, message: Message):
                     InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="menu"),
                 ],
                 [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/adityaserver"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/adityadiscus"),
+                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
                ],
-                [InlineKeyboardButton(text="❌ Ƈɭøsɘ ❌", callback_data="cls")],
+
             ]
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/793b7adbe8f4ca26bd7d9.png"
+        thumb_name = "https://telegra.ph/file/42317cd6618d736284b91.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Łøƈɑɭɭƴ Ʌɗɗɘɗ"
@@ -605,10 +605,10 @@ async def yt(_, message: Message):
                     InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="menu"),
                 ],
                 [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/adityaserver"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/adityadiscus"),
+                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
                 ],
-                [InlineKeyboardButton(text="❌ Ƈɭøsɘ ❌", callback_data="cls")],
+ 
             ]
         )
         requested_by = message.from_user.first_name
@@ -651,7 +651,7 @@ async def yt(_, message: Message):
                         InlineKeyboardButton("4️⃣", callback_data=f'plll 3|{query}|{user_id}'),
                         InlineKeyboardButton("5️⃣", callback_data=f'plll 4|{query}|{user_id}'),
                     ],
-                    [InlineKeyboardButton(text="❌ Ƈɭøsɘ ❌", callback_data="cls")],
+
                 ]
             )       
             await lel.edit(toxxt,reply_markup=koyboard,disable_web_page_preview=True)
@@ -688,10 +688,10 @@ async def yt(_, message: Message):
                         InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="menu"),
                     ],
                     [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/adityaserver"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/adityadiscus"),
+                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
                     ],
-                    [InlineKeyboardButton(text="❌ Ƈɭøsɘ ❌", callback_data="cls")],
+
                 ]
             )
             requested_by = message.from_user.first_name
@@ -835,10 +835,10 @@ async def play(_, message: Message):
                 InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="menu"),
             ],
             [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/adityaserver"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/adityadiscus"),
+                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
             ],
-            [InlineKeyboardButton(text="❌ Ƈɭøsɘ ❌", callback_data="cls")],
+ 
         ]
     )
     requested_by = message.from_user.first_name
@@ -957,7 +957,7 @@ async def deezer(client: Client, message_: Message):
         url = songs.result[0].url
         artist = songs.result[0].artist
         duration = songs.result[0].duration
-        thumbnail = "https://telegra.ph/file/f6086f8909fbfeb0844f2.png"
+        thumbnail = "https://telegra.ph/file/42317cd6618d736284b91.png"
 
     except:
         await res.edit("**🎶 Søɳʛ Ɲøʈ Føʋɳɗ, Ƭɤƴ Ʌɳøʈɦɘɤ Søɳʛ øɤ Ɱɑƴɓɘ Sƥɘɭɭ ɩʈ Ƥɤøƥɘɤɭƴ.**")
@@ -977,10 +977,10 @@ async def deezer(client: Client, message_: Message):
                 InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="menu"),
             ],
             [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/adityaserver"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/adityadiscus"),
+                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
             ],
-            [InlineKeyboardButton(text="❌ Ƈɭøsɘ ❌", callback_data="cls")],
+
         ]
     )
     file_path = await convert(wget.download(url))
@@ -1115,10 +1115,10 @@ async def jiosaavn(client: Client, message_: Message):
                 InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="menu"),
             ],
             [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/adityaserver"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/adityadiscus"),
+                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
             ],
-            [InlineKeyboardButton(text="❌ Ƈɭøsɘ ❌", callback_data="cls")],
+
         ]
     )
     file_path = await convert(wget.download(slink))
@@ -1220,10 +1220,10 @@ async def lol_cb(b, cb):
                 InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="menu"),
             ],
             [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/adityaserver"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/adityadiscus"),
+                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
             ],
-            [InlineKeyboardButton(text="❌ Ƈɭøsɘ ❌", callback_data="cls")],
+
         ]
     )
     requested_by = useer_name
