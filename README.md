@@ -1,24 +1,9 @@
-<h1 align="centre">🎶 Aditya-Player 🎶</h1>
+<h2 align="centre">😘𝐒𝐍𝐄𝐇𝐀 𝐋𝐎𝐕𝐄 𝐀𝐁𝐇𝐈 𝐌𝐔𝐒𝐈𝐂🎵</h2>
 
 ### A bot that can play music on Telegram Group and Channel Voice Chats
 
 <p align="center">
-  <img src="https://telegra.ph/file/8b4520f3f471e3ce253ee.jpg">
-</p>
-
-## Give your 💙
-
-Before clicking on deploy to heroku just click on fork and star just below
-
-<p align="center">
-  <a href="https://github.com/AdityaHalder/Aditya-Player/fork">
-    <img src="https://img.shields.io/github/forks/AdityaHalder/Aditya-Player?label=Fork&style=social">
-    
-  </a>
-  <a href="https://github.com/ABHINETWORK1/TEAM-SNEHABHI">
-    <img src="https://img.shields.io/github/stars/AdityaHalder/Aditya-Player?style=social">
-  </a>
-</p>
+  <img src="https://telegra.ph/file/4637473e97df9854a1b36.jpg">
 
 
 ### Deploy To Heroku 📡</h4>
