@@ -1,5 +1,5 @@
-# AdityaPlayer- Telegram bot project
-# Copyright (C)  Aditya Halder
+# SnehabhiServer -  Telegram bot project
+# Copyright (C)  SNEHABHI SERVER
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
 # published by the Free Software Foundation, either version 3 of the
@@ -12,7 +12,7 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
-# Modified by Inukaasith
+# Modified by ABHISHEK
 
 import os
 from os import getenv
@@ -26,16 +26,16 @@ que = {}
 SESSION_NAME = getenv("SESSION_NAME", "session")
 BOT_TOKEN = getenv("BOT_TOKEN")
 BOT_NAME = getenv("BOT_NAME")
-UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "AdityaServer")
-BG_IMAGE = getenv("BG_IMAGE", "https://telegra.ph/file/793b7adbe8f4ca26bd7d9.png")
+UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "ABHI_NETWORK1")
+BG_IMAGE = getenv("BG_IMAGE", "https://telegra.ph/file/100777ceb64dff5ed593a.png")
 admins = {}
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
 BOT_USERNAME = getenv("BOT_USERNAME")
-ASSISTANT_NAME = getenv("ASSISTANT_NAME", "Aditya_Player")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "AdityaDiscus")
-PROJECT_NAME = getenv("PROJECT_NAME", "Aditya Player")
-SOURCE_CODE = getenv("SOURCE_CODE", "AdityaHalder")
+ASSISTANT_NAME = getenv("ASSISTANT_NAME", "ABHI_MUSIC")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "SNEHABHI_SERVER")
+PROJECT_NAME = getenv("PROJECT_NAME", "SNEHABHI MUSIC")
+SOURCE_CODE = getenv("SOURCE_CODE", "ABHINETWORK1")
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "7"))
 ARQ_API_KEY = getenv("ARQ_API_KEY", None)
 PMPERMIT = getenv("PMPERMIT", None)
