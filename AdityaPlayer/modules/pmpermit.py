@@ -1,5 +1,5 @@
-# AdityaPlayer (Telegram bot project )
-# Copyright (C)  Aditya Halder
+# SNEHABHI SERVER (Telegram bot project )
+# Copyright (C)  SNEHABHI SERVER
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -16,10 +16,10 @@
 
 from pyrogram import Client
 import asyncio
-from AdityaPlayer.config import SUDO_USERS, PMPERMIT
+from SnehabhiServer.config import SUDO_USERS, PMPERMIT
 from pyrogram import filters
 from pyrogram.types import Message
-from AdityaPlayer.services.callsmusic.callsmusic import client as USER
+from SnehabhiServer.services.callsmusic.callsmusic import client as USER
 
 PMSET =True
 pchats = []
