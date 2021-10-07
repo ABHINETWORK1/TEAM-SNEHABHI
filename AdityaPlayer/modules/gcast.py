@@ -1,5 +1,5 @@
-# AdityaPlayer (Telegram bot project )
-# Copyright (C) 2021  Aditya Halder
+# SNEHABHI SERVER (Telegram bot project )
+# Copyright (C) 2021  SNEHABHI SERVER
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -18,7 +18,7 @@
 from pyrogram import Client, filters
 from pyrogram.errors import UserAlreadyParticipant
 import asyncio
-from AdityaPlayer.config import SUDO_USERS
+from SnehabhiServer.config import SUDO_USERS
 
 @Client.on_message(filters.command(["gcast"]))
 async def bye(client, message):
@@ -34,10 +34,10 @@ async def bye(client, message):
             try:
                 await client.send_message(dialog.chat.id, msg)
                 sent = sent+1
-                await lol.edit(f"**💬 Ɠƈɑʂʈɩɳʛ ... Sɘŋʈ :** **{sent}** **Ƈɦɑʈʂ. Fɑɩɭɗ:** **{failed}** **Ƈɦɑʈʂ.**")
+                await lol.edit(f"**💬 Ɠƈɑʂʈɩɳʛ ... Sɘŋʈ :** **{sent}** **Ƈɦɑʈʂ. Fɑɩɭeɗ:** **{failed}** **Ƈɦɑʈʂ.**")
             except:
                 failed=failed+1
-                await lol.edit(f"**💬 Ɠƈɑʂʈɩɳʛ ... Sɘŋʈ:** **{sent}** **Ƈɦɑʈʂ. Fɑɩɭɗ:** **{failed}** **Ƈɦɑʈʂ.**")
+                await lol.edit(f"**💬 Ɠƈɑʂʈɩɳʛ ... Sɘŋʈ:** **{sent}** **Ƈɦɑʈʂ. Fɑɩɭeɗ:** **{failed}** **Ƈɦɑʈʂ.**")
             await asyncio.sleep(3)
-        await message.reply_text(f"**💬 Ɠƈɑʂʈɘɗ Ɱɘʂʂɑʛɘ Ƭø** **{sent}** **Ƈɦɑʈʂ. & Fɑɩɭɗ** **{failed}** **Ƈɦɑʈʂ.**")
+        await message.reply_text(f"**💬 Ɠƈɑʂʈɘɗ Ɱɘʂʂɑʛɘ Ƭø** **{sent}** **Ƈɦɑʈʂ. & Fɑɩɭeɗ** **{failed}** **Ƈɦɑʈʂ.**")
 
