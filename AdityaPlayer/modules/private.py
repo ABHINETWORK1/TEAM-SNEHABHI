@@ -35,7 +35,7 @@ def _start(client, message):
                     InlineKeyboardButton(
                         "🌐 Ʋƥɗɑʈɘs", url=f"https://t.me/ABHI_NETWORK1"), 
                     InlineKeyboardButton(
-                        "💫𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ✨", url=f"https://t.me/SNEHABHI-SERVER")
+                        "💫𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ✨", url=f"https://t.me/SNEHABHI_SERVER")
                 ],[
                     InlineKeyboardButton(
                         "💫𝙾𝚆𝙽𝙴𝚁 𝙺𝙸𝙽𝙶✨", url=f"https://t.me/SNEHU_IS_MINE")
