@@ -1,3 +1,3 @@
-from AdityaPlayer.function.admins import admins, get, set
+from SnehabhiServer.function.admins import admins, get, set
 
 __all__ = ["set", "get", "admins"]
