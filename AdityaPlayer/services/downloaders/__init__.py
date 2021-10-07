@@ -1,3 +1,3 @@
-from AdityaPlayer.services.downloaders import youtube
+from SnehabhiServer.services.downloaders import youtube
 
 __all__ = ["youtube"]
