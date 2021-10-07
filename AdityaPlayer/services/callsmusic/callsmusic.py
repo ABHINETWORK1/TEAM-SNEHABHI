@@ -1,4 +1,4 @@
-# Aditya Player - Telegram bot for streaming audio in group calls
+# SNEHABHI SERVER - Telegram bot for streaming audio in group calls
 # Copyright (C) SNEHABHI SERVER
 
 # This program is free software: you can redistribute it and/or modify
