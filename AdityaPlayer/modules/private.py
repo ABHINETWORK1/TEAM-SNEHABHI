@@ -30,15 +30,18 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Ʌɗɗ Ɱɘ ʈø Yøʋɤ Ɠɤøʋƥ ➕", url=f"https://t.me/LIVE_LIKE_LIFE")],
+                        "💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE")],
                 [
                     InlineKeyboardButton(
                         "🌐 Ʋƥɗɑʈɘs", url=f"https://t.me/ABHI_NETWORK1"), 
                     InlineKeyboardButton(
-                        "💬 Sʋƥƥøɤʈ", url=f"https://t.me/SNEHABHI-SERVER")
+                        "💫𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ✨", url=f"https://t.me/SNEHABHI-SERVER")
                 ],[
                     InlineKeyboardButton(
-                        "🤖 Ƈøŋʈɑƈʈ ʈø  Ɱƴ Øωɳɘɤ 🤖", url=f"https://t.me/{SOURCE_CODE}")
+                        "💫𝙾𝚆𝙽𝙴𝚁 𝙺𝙸𝙽𝙶✨", url=f"https://t.me/SNEHU_IS_MINE")
+                ],[
+                    InlineKeyboardButton(
+                        "💫𝙾𝚆𝙽𝙴𝚁 𝚀𝚄𝙴𝙴𝙽✨", url=f"HTTP://T.ME/ABHI_IS_MINE"
                 ]
             ]
         ),
@@ -48,12 +51,12 @@ def _start(client, message):
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
-        f"""**🔴 {PROJECT_NAME} ɩs Øŋɭɩɳɘ**""",
+        f"""**SNEHABHI SERVER IS Oɴʟɪɴᴇ ✅**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💬 Sʋƥƥøɤʈ Ƈɦɑʈ", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "💫𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ✨", url=f"https://t.me/SNEHABHI_SERVER"
                     )
                 ]
             ]
@@ -91,12 +94,13 @@ def map(pos):
             [InlineKeyboardButton(text = '▶️', callback_data = "help+2")]
         ]
     elif(pos==len(tr.HELP_MSG)-1):
-        url = f"https://t.me/{SUPPORT_GROUP}"
+        url = f"https://t.me/SNEHABHI_SERVER"
         button = [
-            [InlineKeyboardButton("➕ Ʌɗɗ Ɱɘ ʈø Yøʋɤ Ɠɤøʋƥ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '🌐 Ʋƥɗɑʈɘs', url=f"https://t.me/{UPDATES_CHANNEL}"),
-             InlineKeyboardButton(text = '💬 Sʋƥƥøɤʈ', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = '🤖 Ƈøŋʈɑƈʈ ʈø Mƴ Øωɳɘɤ 🤖', url=f"https://{SOURCE_CODE}")],
+            [InlineKeyboardButton("💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE")],
+            [InlineKeyboardButton(text = '🌐 Ʋƥɗɑʈɘs', url=f"https://t.me/ABHI_NETWORK1"),
+             InlineKeyboardButton(text = '💫𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ✨', url=f"https://t.me/SNEHABHI_SERVER)],
+            [InlineKeyboardButton(text = '💫𝙾𝚆𝙽𝙴𝚁 𝙺𝙸𝙽𝙶✨', url=f"https://t.me/SNEHU_IS_MINE")],
+            [InlineKeyboardButton(text = '💫𝙾𝚆𝙽𝙴𝚁 𝚀𝚄𝙴𝙴𝙽✨', url=f"HTTP://T.ME/ABHI_IS_MINE")],
             [InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}")]
         ]
     else:
@@ -111,12 +115,12 @@ def map(pos):
 @Client.on_message(filters.command("help") & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
     await message.reply_text(
-        f"""**🙋‍ Ɦɘɭɭø, I ɑɱ ɑɳ Ʌɗⱱɑɳƈɘɗ Ƥrɘɱɩʋɱ Ɱʉsɩƈ Ƥɭɑƴɘr Ɓøʈ Ƈrɘɑʈɘɗ Ɓƴ [Ʌɗɩtyɑ](t.me/AdityaHalder). I Ƈɑɳ Ƥɭɑƴ Ɱʉsɩƈ ɩɳ Yøʋr Ƭɘɭɘʛrɑɱ Ƈɦɑɳɳɘɭ ør Ɠrøuƥ Vøɩƈɘ Ƈɦɑʈ ...**""",
+        f"""**🙋‍ Ɦɘɭɭø, I ɑɱ ɑɳ Ʌɗⱱɑɳƈɘɗ Ƥrɘɱɩʋɱ Ɱʉsɩƈ Ƥɭɑƴɘr Ɓøʈ Ƈrɘɑʈɘɗ Ɓƴ [SNEHU & ABHI ](t.me/SNEHABHI_SERVER). I Ƈɑɳ Ƥɭɑƴ Ɱʉsɩƈ ɩɳ Yøʋr Ƭɘɭɘʛrɑɱ Ƈɦɑɳɳɘɭ ør Ɠrøuƥ Vøɩƈɘ Ƈɦɑʈ ...**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "👉 Ƈɭɩƈƙ Ħɘrɘ Føɤ Ɦɘɭƥ 👈", url=f"https://t.me/{BOT_USERNAME}?start"
+                        "💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE"
                     )
                 ]
             ]
