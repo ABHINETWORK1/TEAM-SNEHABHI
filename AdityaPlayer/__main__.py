@@ -18,7 +18,7 @@
 import requests
 from pyrogram import Client as Bot
 
-from AdityaPlayer.config import API_HASH, API_ID, BG_IMAGE, BOT_TOKEN
+from SnehabhiServer.config import API_HASH, API_ID, BG_IMAGE, BOT_TOKEN
 from SnehabhiServer.services.callsmusic import run
 
 response = requests.get(BG_IMAGE)
@@ -31,7 +31,7 @@ bot = Bot(
     API_ID,
     API_HASH,
     bot_token=BOT_TOKEN,
-    plugins=dict(root="AdityaServer.modules"),
+    plugins=dict(root="SnehabhiServer.modules"),
 )
 
 bot.start()
