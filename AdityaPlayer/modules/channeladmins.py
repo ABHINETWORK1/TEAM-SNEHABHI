@@ -16,16 +16,16 @@
 
 
 from asyncio import QueueEmpty
-from SnehabhiServer.config import que
+from AdityaPlayer.config import que
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from SnehabhiServer.function.admins import set
-from SnehabhiServer.helpers.channelmusic import get_chat_id
-from SnehabhiServer.helpers.decorators import authorized_users_only, errors
-from SnehabhiServer.helpers.filters import command, other_filters
-from SnehabhiServrr.services.callsmusic import callsmusic
-from SnehabhiServer.services.queues import queues
+from AdityaPlayer.function.admins import set
+from AdityaPlayer.helpers.channelmusic import get_chat_id
+from AdityaPlayer.helpers.decorators import authorized_users_only, errors
+from AdityaPlayer.helpers.filters import command, other_filters
+from AdityaPlayer.services.callsmusic import callsmusic
+from AdityaPlayer.services.queues import queues
 
 
 @Client.on_message(filters.command(["channelpause","cpause"]) & filters.group & ~filters.edited)
