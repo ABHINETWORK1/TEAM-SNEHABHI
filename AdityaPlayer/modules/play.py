@@ -191,14 +191,20 @@ def r_ply(type_):
                 InlineKeyboardButton("▶️", "resume"),
                 InlineKeyboardButton("⏭", "skip"),
             ],
+            
             [
-                InlineKeyboardButton("📝 Ƥɭɑƴɭɩsʈ 📝", "playlist"),
-            ],
-            [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
-            ],
-
+                    InlineKeyboardButton(text="💫 𝙲𝙷𝙰𝙽𝙽𝙴𝙻✨", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💫𝚂𝚄𝙿𝙿𝙾𝚁T✨", url=f"https://t.me/SNEHABHI_SERVER"),
+            ],[
+                    InlineKeyboardButton(
+                           text="💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE")
+            ],[       
+                    InlineKeyboardButton(
+                           text="💫𝙾𝚆𝙽𝙴𝚁 𝙺𝙸𝙽𝙶✨", url=f"https://t.me/SNEHU_IS_MINE")
+            ],[           
+                    InlineKeyboardButton(
+                           text="💫𝙾𝚆𝙽𝙴𝚁 𝚀𝚄𝙴𝙴𝙽✨", url=f"HTTP://T.ME/ABHI_IS_MINE")
+            ]
         ]
     )
     return mar
@@ -256,7 +262,7 @@ async def hfmm(_, message):
     status = message.text.split(None, 1)[1]
     message.chat.id
     if status == "ON" or status == "on" or status == "On":
-        lel = await message.reply("**🔄 Ƥɤøƈƈɘssɩɳʛ ...**")
+        lel = await message.reply("**𝙹𝚄𝚂𝚃 𝚆𝙰𝙸𝚃 𝙰 𝚂𝙴𝙲𝙾𝙽𝙳 💫🥺 𝙵𝙾𝚁 𝙿𝙻𝙰𝚈 𝚂𝙾𝙽𝙶 😋...uploaded by @SNEHABHI_SERVER ...**")
         if not message.chat.id in DISABLED_GROUPS:
             await lel.edit("**🤖 Ɱʋsɩƈ Ƥɭɑƴɘɤ Ʌɭɤɘɑɗƴ Ʌƈʈɩⱱɑʈɘɗ ɩɳ Ƭɦɩs Ƈɦɑʈ ...**")
             return
@@ -366,9 +372,9 @@ async def m_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style="md")
-        msg = "**▶️ Ɲøω Ƥɭɑƴɩɳʛ ɩɳ** {}".format(cb.message.chat.title)
+        msg = "**▶ 𝐍𝐎𝐖 𝐏𝐋𝐀𝐘𝐈𝐍𝐆 𝐈𝐍** {}".format(cb.message.chat.title)
         msg += "\n♨️ " + now_playing
-        msg += "\n💢 **Ʀɘʠʋɘʂʈɘɗ Ɓƴ** " + by
+        msg += "\n💢 **𝐑𝐄𝐐𝐔𝐄𝐒𝐓𝐄𝐃 𝐁𝐘** " + by
         temp.pop(0)
         if temp:
             msg += "\n\n"
@@ -377,7 +383,7 @@ async def m_cb(b, cb):
                 name = song[0]
                 usr = song[1].mention(style="md")
                 msg += f"\n♨️ {name}"
-                msg += f"\n💢 **Ʀɘʠʋɘʂʈɘɗ Ɓƴ** {usr}\n"
+                msg += f"\n💢 **𝐑𝐄𝐐𝐔𝐄𝐒𝐓𝐄𝐃 𝐁𝐘** {usr}\n"
         await cb.message.edit(msg)
 
     elif type_ == "resume":
@@ -412,14 +418,20 @@ async def m_cb(b, cb):
                     InlineKeyboardButton("▶️", "resume"),
                     InlineKeyboardButton("⏭", "skip"),
                 ],
+                
                 [
-                    InlineKeyboardButton("📝 Ƥɭɑƴɭɩsʈ 📝", "playlist"),
-                ],
-                [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
-               ],
-
+                    InlineKeyboardButton(text="💫 𝙲𝙷𝙰𝙽𝙽𝙴𝙻✨", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💫𝚂𝚄𝙿𝙿𝙾𝚁T✨", url=f"https://t.me/SNEHABHI_SERVER"),
+               ],[
+                    InlineKeyboardButton(
+                          "💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE")
+               ],[
+                    InlineKeyboardButton(
+                          "💫𝙾𝚆𝙽𝙴𝚁 𝚀𝚄𝙴𝙴𝙽✨", url=f"HTTP://T.ME/ABHI_IS_MINE")
+               ],[
+                    InlineKeyboardButton(
+                          "💫𝙾𝚆𝙽𝙴𝚁 𝙺𝙸𝙽𝙶✨", url=f"https://t.me/SNEHU_IS_MINE")
+               ]
             ]
         )
         await cb.message.edit(stats, reply_markup=marr)
@@ -427,7 +439,7 @@ async def m_cb(b, cb):
         if qeue:
             qeue.pop(0)
         if chet_id not in callsmusic.pytgcalls.active_calls:
-            await cb.answer("❎ Ƈɦɑʈ ɩs Ɲøʈ Ƈøɳɳɘƈʈɘɗ ❗️", show_alert=True)
+            await cb.answer("𝐒𝐍𝐄𝐇𝐀𝐁𝐇𝐈 𝐒𝐄𝐑𝐕𝐄𝐑 𝐍𝐎𝐓𝐇𝐈𝐍𝐆 𝐈𝐒 𝐓𝐎 𝐏𝐋𝐀𝐘❗️", show_alert=True)
         else:
             callsmusic.queues.task_done(chet_id)
 
@@ -439,10 +451,10 @@ async def m_cb(b, cb):
                 callsmusic.pytgcalls.change_stream(
                     chet_id, callsmusic.queues.get(chet_id)["file"]
                 )
-                await cb.answer("⏩ Sƙɩƥƥɘɗ ...**")
+                await cb.answer("⏩ 𝐒𝐊𝐈𝐏𝐏𝐄𝐃 𝐁𝐘 @SNEHABHI_SERVER ...**")
                 await cb.message.edit((m_chat, qeue), reply_markup=r_ply(the_data))
                 await cb.message.reply_text(
-                    f"**⏩ Sƙɩƥƥɘɗ Ƭɦɘ Søɳʛ ...**\n**▶️ Ɲøω Ƥɭɑƴɩɳʛ** **{qeue[0][0]}**"
+                    f"**⏩𝐒𝐊𝐈𝐏𝐏𝐄𝐃 𝐁𝐘 @SNEHABHI_SERVER ...**\n**▶️ Ɲøω Ƥɭɑƴɩɳʛ** **{qeue[0][0]}**"
                 )
 
     else:
@@ -464,7 +476,7 @@ async def yt(_, message: Message):
     global useer
     if message.chat.id in DISABLED_GROUPS:
         return    
-    lel = await message.reply("**🔄 Ƥɤøƈƈɘssɩɳʛ ...**")
+    lel = await message.reply("**𝙹𝚄𝚂𝚃 𝚆𝙰𝙸𝚃 𝙰 𝚂𝙴𝙲𝙾𝙽𝙳 💫🥺 𝙵𝙾𝚁 𝙿𝙻𝙰𝚈 𝚂𝙾𝙽𝙶 😋...uploaded by @SNEHABHI_SERVER ...**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -550,14 +562,30 @@ async def yt(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📝 Ƥɭɑƴɭɩsʈ 📝", callback_data="playlist"),
+                   
                     InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="menu"),
-                ],
-                [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
-               ],
 
+                [
+                    InlineKeyboardButton(text="💫 𝙲𝙷𝙰𝙽𝙽𝙴𝙻✨", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💫𝚂𝚄𝙿𝙿𝙾𝚁T✨", url=f"https://t.me/SNEHABHI_SERVER"),
+               ],[
+
+                    InlineKeyboardButton(
+
+                           text="💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE")
+
+            ],[       
+
+                    InlineKeyboardButton(
+
+                           text="💫𝙾𝚆𝙽𝙴𝚁 𝙺𝙸𝙽𝙶✨", url=f"https://t.me/SNEHU_IS_MINE")
+
+            ],[           
+
+                    InlineKeyboardButton(
+
+                           text="💫𝙾𝚆𝙽𝙴𝚁 𝚀𝚄𝙴𝙴𝙽✨", url=f"HTTP://T.ME/ABHI_IS_MINE")
+               ]
             ]
         )
         file_name = get_file_name(audio)
@@ -575,7 +603,7 @@ async def yt(_, message: Message):
         )
     elif urls:
         query = toxt
-        await lel.edit("**🔄 Ƥɤøƈƈɘssɩɳʛ ...**")
+        await lel.edit("**𝙹𝚄𝚂𝚃 𝚆𝙰𝙸𝚃 𝙰 𝚂𝙴𝙲𝙾𝙽𝙳 💫🥺 𝙵𝙾𝚁 𝙿𝙻𝙰𝚈 𝚂𝙾𝙽𝙶 😋...uploaded by @SNEHABHI_SERVER ...**")
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -605,10 +633,26 @@ async def yt(_, message: Message):
                     InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="menu"),
                 ],
                 [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
-                ],
- 
+                    InlineKeyboardButton(text="💫 𝙲𝙷𝙰𝙽𝙽𝙴𝙻✨", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💫𝚂𝚄𝙿𝙿𝙾𝚁T✨", url=f"https://t.me/SNEHABHI_SERVER"),
+                ],[
+
+                    InlineKeyboardButton(
+
+                           text="💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE")
+
+            ],[       
+
+                    InlineKeyboardButton(
+
+                           text="💫𝙾𝚆𝙽𝙴𝚁 𝙺𝙸𝙽𝙶✨", url=f"https://t.me/SNEHU_IS_MINE")
+
+            ],[           
+
+                    InlineKeyboardButton(
+
+                           text="💫𝙾𝚆𝙽𝙴𝚁 𝚀𝚄𝙴𝙴𝙽✨", url=f"HTTP://T.ME/ABHI_IS_MINE")
+                 ]
             ]
         )
         requested_by = message.from_user.first_name
@@ -619,7 +663,7 @@ async def yt(_, message: Message):
         for i in message.command[1:]:
             query += " " + str(i)
         print(query)
-        await lel.edit("**🔄 Ƥɤøƈƈɘssɩɳʛ ...**")
+        await lel.edit("**𝙹𝚄𝚂𝚃 𝚆𝙰𝙸𝚃 𝙰 𝚂𝙴𝙲𝙾𝙽𝙳 💫🥺 𝙵𝙾𝚁 𝙿𝙻𝙰𝚈 𝚂𝙾𝙽𝙶 😋...uploaded by @SNEHABHI_SERVER ...**")
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         
         try:
@@ -688,10 +732,26 @@ async def yt(_, message: Message):
                         InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="menu"),
                     ],
                     [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
-                    ],
+                    InlineKeyboardButton(text="💫 𝙲𝙷𝙰𝙽𝙽𝙴𝙻✨", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💫𝚂𝚄𝙿𝙿𝙾𝚁T✨", url=f"https://t.me/SNEHABHI_SERVER"),
+                    ],[
 
+                    InlineKeyboardButton(
+
+                           text="💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE")
+
+            ],[       
+
+                    InlineKeyboardButton(
+
+                           text="💫𝙾𝚆𝙽𝙴𝚁 𝙺𝙸𝙽𝙶✨", url=f"https://t.me/SNEHU_IS_MINE")
+
+            ],[           
+
+                    InlineKeyboardButton(
+
+                           text="💫𝙾𝚆𝙽𝙴𝚁 𝚀𝚄𝙴𝙴𝙽✨", url=f"HTTP://T.ME/ABHI_IS_MINE")
+                    ]
                 ]
             )
             requested_by = message.from_user.first_name
@@ -832,7 +892,7 @@ async def play(_, message: Message):
         [
             [
                 InlineKeyboardButton(
-                    "💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE")],
+                    "💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE")
             ],
             [
                     InlineKeyboardButton(text="💫 𝙲𝙷𝙰𝙽𝙽𝙴𝙻✨", url=f"https://t.me/ABHI_NETWORK1"),
@@ -895,7 +955,7 @@ async def deezer(client: Client, message_: Message):
     if message_.chat.id in DISABLED_GROUPS:
         return
     global que
-    lel = await message_.reply("**🔄 Ƥɤøƈƈɘssɩɳʛ ...**")
+    lel = await message_.reply("**𝙹𝚄𝚂𝚃 𝚆𝙰𝙸𝚃 𝙰 𝚂𝙴𝙲𝙾𝙽𝙳 💫🥺 𝙵𝙾𝚁 𝙿𝙻𝙰𝚈 𝚂𝙾𝙽𝙶 😋...uploaded by @SNEHABHI_SERVER ...**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
@@ -983,10 +1043,26 @@ async def deezer(client: Client, message_: Message):
                 InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="menu"),
             ],
             [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
-            ],
+                    InlineKeyboardButton(text="💫 𝙲𝙷𝙰𝙽𝙽𝙴𝙻✨", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💫𝚂𝚄𝙿𝙿𝙾𝚁T✨", url=f"https://t.me/SNEHABHI_SERVER"),
+            ],[
 
+                    InlineKeyboardButton(
+
+                           text="💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE")
+
+            ],[       
+
+                    InlineKeyboardButton(
+
+                           text="💫𝙾𝚆𝙽𝙴𝚁 𝙺𝙸𝙽𝙶✨", url=f"https://t.me/SNEHU_IS_MINE")
+
+            ],[           
+
+                    InlineKeyboardButton(
+
+                           text="💫𝙾𝚆𝙽𝙴𝚁 𝚀𝚄𝙴𝙴𝙽✨", url=f"HTTP://T.ME/ABHI_IS_MINE")
+             ]
         ]
     )
     file_path = await convert(wget.download(url))
@@ -1121,10 +1197,26 @@ async def jiosaavn(client: Client, message_: Message):
                 InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="menu"),
             ],
             [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
-            ],
+                    InlineKeyboardButton(text="💫 𝙲𝙷𝙰𝙽𝙽𝙴𝙻✨", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💫𝚂𝚄𝙿𝙿𝙾𝚁T✨", url=f"https://t.me/SNEHABHI_SERVER"),
+            ],[
 
+                    InlineKeyboardButton(
+
+                           text="💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE")
+
+            ],[       
+
+                    InlineKeyboardButton(
+
+                           text="💫𝙾𝚆𝙽𝙴𝚁 𝙺𝙸𝙽𝙶✨", url=f"https://t.me/SNEHU_IS_MINE")
+
+            ],[           
+
+                    InlineKeyboardButton(
+
+                           text="💫𝙾𝚆𝙽𝙴𝚁 𝚀𝚄𝙴𝙴𝙽✨", url=f"HTTP://T.ME/ABHI_IS_MINE")
+             ]
         ]
     )
     file_path = await convert(wget.download(slink))
@@ -1227,10 +1319,26 @@ async def lol_cb(b, cb):
                 InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="menu"),
             ],
             [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
-            ],
+                    InlineKeyboardButton(text="💫 𝙲𝙷𝙰𝙽𝙽𝙴𝙻✨", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💫𝚂𝚄𝙿𝙿𝙾𝚁T✨", url=f"https://t.me/SNEHABHI_SERVER"),
+            ],[
 
+                    InlineKeyboardButton(
+
+                           text="💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE")
+
+            ],[       
+
+                    InlineKeyboardButton(
+
+                           text="💫𝙾𝚆𝙽𝙴𝚁 𝙺𝙸𝙽𝙶✨", url=f"https://t.me/SNEHU_IS_MINE")
+
+            ],[           
+
+                    InlineKeyboardButton(
+
+                           text="💫𝙾𝚆𝙽𝙴𝚁 𝚀𝚄𝙴𝙴𝙽✨", url=f"HTTP://T.ME/ABHI_IS_MINE")
+             ]
         ]
     )
     requested_by = useer_name
