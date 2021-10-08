@@ -16,10 +16,10 @@
 
 from pyrogram import Client
 import asyncio
-from SnehabhiServer.config import SUDO_USERS, PMPERMIT
+from AdityaPlayer.config import SUDO_USERS, PMPERMIT
 from pyrogram import filters
 from pyrogram.types import Message
-from SnehabhiServer.services.callsmusic.callsmusic import client as USER
+from AdityaPlayer.services.callsmusic.callsmusic import client as USER
 
 PMSET =True
 pchats = []
