@@ -1,5 +1,5 @@
-# AdityaPlayer (Telegram bot project )
-# Copyright (C)  Aditya Halder
+# SNEHABHI SERVER (Telegram bot project )
+# Copyright (C)  SNEHABHI SERVER
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -35,8 +35,8 @@ from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 from youtubesearchpython import SearchVideos
 
-from AdityaPlayer.config import DURATION_LIMIT
-from AdityaPlayer.modules.play import arq
+from SnehabhiServer.config import DURATION_LIMIT
+from SnehabhiServer.modules.play import arq
 
 
 @Client.on_message(filters.command("song") & ~filters.channel)
@@ -76,7 +76,7 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = "**🎵 Ƭɦɩs Søɳʛ ɩs Ʋƥɭøɑɗɘɗ Ɓƴ [Ʌɗɩtyɑ](https://t.me/AdityaHalder) ...**"
+        rep = "**🎵 Ƭɦɩs Søɳʛ ɩs Ʋƥɭøɑɗɘɗ Ɓƴ [SNEHABHI SERVER](https://t.me/SNEHABHI_SERVER) ...**"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(dur_arr[i]) * secmul
