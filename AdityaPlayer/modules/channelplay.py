@@ -31,30 +31,30 @@ from pyrogram.types import Voice
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from Python_ARQ import ARQ
 from youtube_search import YoutubeSearch
-from SnehabhiServer.modules.play import generate_cover
-from SnehabhiServer.modules.play import arq
-from SnehabhiServer.modules.play import cb_admin_check
-from SnehabhiServer.modules.play import transcode
-from SnehabhiServer.modules.play import convert_seconds
-from SnehabhiServer.modules.play import time_to_seconds
-from SnehabhiServer.modules.play import changeImageSize
-from SnehabhiServer.config import BOT_NAME as bn
-from SnehabhiServer.config import DURATION_LIMIT
-from SnehabhiServer.config import UPDATES_CHANNEL as updateschannel
-from SnehabhiServer.config import que
-from SnehabhiServer.function.admins import admins as a
-from SnehabhiServer.helpers.errors import DurationLimitError
-from SnehabhiServer.helpers.decorators import errors
-from SnehabhiServer.helpers.admins import get_administrators
-from SnehabhiServer.helpers.channelmusic import get_chat_id
-from SnehabhiServer.helpers.decorators import authorized_users_only
-from SnehabhiServer.helpers.filters import command, other_filters
-from SnehabhiServer.helpers.gets import get_file_name
-from SnehabhiServer.services.callsmusic import callsmusic
-from SnehabhiServer.services.callsmusic.callsmusic import client as USER
-from Snehabhiserver.services.converter.converter import convert
-from SnehabhiServer.services.downloaders import youtube
-from SnehabhiServer.services.queues import queues
+from AdityaPlayer.modules.play import generate_cover
+from AdityaPlayer.modules.play import arq
+from AdityaPlayer.modules.play import cb_admin_check
+from AdityaPlayer.modules.play import transcode
+from AdityaPlayer.modules.play import convert_seconds
+from AdityaPlayer.modules.play import time_to_seconds
+from AdityaPlayer.modules.play import changeImageSize
+from AdityaPlayer.config import BOT_NAME as bn
+from AdityaPlayer.config import DURATION_LIMIT
+from AdityaPlayer.config import UPDATES_CHANNEL as updateschannel
+from AdityaPlayer.config import que
+from AdityaPlayer.function.admins import admins as a
+from AdityaPlayer.helpers.errors import DurationLimitError
+from AdityaPlayer.helpers.decorators import errors
+from AdityaPlayer.helpers.admins import get_administrators
+from AdityaPlayer.helpers.channelmusic import get_chat_id
+from AdityaPlayer.helpers.decorators import authorized_users_only
+from AdityaPlayer.helpers.filters import command, other_filters
+from AdityaPlayer.helpers.gets import get_file_name
+from AdityaPlayer.services.callsmusic import callsmusic
+from AdityaPlayer.services.callsmusic.callsmusic import client as USER
+from AdityaPlayer.services.converter.converter import convert
+from AdityaPlayer.services.downloaders import youtube
+from AdityaPlayer.services.queues import queues
 
 chat_id = None
 
