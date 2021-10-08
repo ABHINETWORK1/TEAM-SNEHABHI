@@ -352,7 +352,7 @@ async def m_cb(b, cb):
             await cb.answer("❎ Ƈɦɑʈ ɩs Ɲøʈ Ƈøɳɳɘƈʈɘɗ ❗️", show_alert=True)
         else:
             callsmusic.pytgcalls.resume_stream(chet_id)
-            await cb.answer("⏸ ️Sʋƈƈɘssƒʋɭɭƴ Ʀɘsʋɱɘɗ ❗")
+            await cb.answer("⏸ 𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘 𝐑𝐄𝐒𝐔𝐌𝐄𝐃 𝐁𝐘 @SNEHABHI_SERVER ❗")
             await cb.message.edit(
                 updated_stats(m_chat, qeue), reply_markup=r_ply("pause")
             )
@@ -730,7 +730,7 @@ async def yt(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="**▶️ Ƥɭɑƴɩɳʛ Ƭɦɘ Søɳʛ Ʀɘʠʋɘsʈɘɗ Ɓƴ {} ɩɳ Vøɩƈɘ Ƈɦɑʈ ...**".format(
+            caption="**▶️ 𝐒𝐎𝐍𝐆 𝐏𝐋𝐀𝐘 𝐊𝐀𝐑 𝐑𝐀𝐇𝐀 𝐇𝐔 𝐉𝐎 𝐏𝐋𝐀𝐘 𝐊𝐈𝐘𝐀 𝐇𝐀𝐈 👉 {} 𝐍𝐄 𝐔𝐏𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 @SNEHABHI_SERVER ...**".format(
                 message.from_user.mention()
             ),
         )
@@ -743,14 +743,14 @@ async def play(_, message: Message):
     global que
     if message.chat.id in DISABLED_GROUPS:
         return
-    lel = await message.reply("**🔄 Ƥɤøƈƈɘssɩɳʛ ...**")
+    lel = await message.reply("**𝚁𝚄𝙺𝙾 𝚉𝙰𝚁𝙰 𝚂𝙰𝙱𝙰𝚁 𝙺𝙰𝚁𝙾 ⭐ 𝚂𝙾𝙽𝙶 𝙳𝙷𝚄𝙽𝙳𝙷 𝚁𝙰𝙷𝙰 𝙷𝚄 ❤️...uploaded by @SNEHABHI_SERVER ✨ ...**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "Aditya Player"
+        user.first_name = "Snehabhi Player"
     usar = user
     wew = usar.id
     try:
@@ -796,7 +796,7 @@ async def play(_, message: Message):
             f"<i> 🤖 Ʌssɩsʈɑɳƈɘ Usɘɤɓøʈ Ɲøʈ ɩɳ Yøʋɤ Ɠɤøʋƥ ...\nƤɭɘasɘ Ʌɗɗ ɩʈ  Ɱɑɳɳʋɑɭɭƴ Øɤ Ƈøɳʈɑƈʈ ʈø Ɱʋsɩƈ Ɓøʈ Øωɳɘɤ ...</i>"
         )
         return
-    await lel.edit("**🔎 Sɘɑɤƈɦɩɳʛ ...**")
+    await lel.edit("**𝚁𝚄𝙺𝙾 𝚉𝙰𝚁𝙰 𝚂𝙰𝙱𝙰𝚁 𝙺𝙰𝚁𝙾 ⭐ 𝚂𝙾𝙽𝙶 𝙳𝙷𝚄𝙽𝙳𝙷 𝚁𝙰𝙷𝙰 𝙷𝚄 ❤️...uploaded by @SNEHABHI_SERVER ✨**")
     user_id = message.from_user.id
     user_name = message.from_user.first_name
      
@@ -805,7 +805,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += " " + str(i)
     print(query)
-    await lel.edit("**🔄 Ƥɤøƈƈɘssɩɳʛ ...**")
+    await lel.edit("**𝙹𝚄𝚂𝚃 𝚆𝙰𝙸𝚃 𝙰 𝚂𝙴𝙲𝙾𝙽𝙳 💫🥺 𝙵𝙾𝚁 𝙿𝙻𝙰𝚈 𝚂𝙾𝙽𝙶 😋...uploaded by @SNEHABHI_SERVER ✨ ...**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -822,7 +822,7 @@ async def play(_, message: Message):
 
     except Exception as e:
         await lel.edit(
-            "**🎶 Søɳʛ Ɲøʈ Føʋɳɗ, Ƭɤƴ Ʌɳøʈɦɘɤ Søɳʛ øɤ Ɱɑƴɓɘ Sƥɘɭɭ ɩʈ Ƥɤøƥɘɤɭƴ.**"
+            "**🎶 𝑩𝑬𝑻𝑨 𝑱𝑨𝑶 𝑷𝑨𝑯𝑳𝑬 𝑺𝑶𝑵𝑮 𝑲𝑨 𝑵𝑨𝑴 𝑻𝑯𝑰𝑲 𝑺𝑬 𝑫𝑬𝑲𝑯 𝑲𝑬 𝑨𝑨𝑶 😐 𝑲𝒀𝑼𝑲𝑰 𝑲𝑶𝑰 𝑺𝑶𝑵𝑮 𝑵𝑨𝑯𝑰 𝑯𝑨𝑰 𝑴𝑬𝑹𝑬 𝑷𝑨𝑺 𝑨𝑰𝑺𝑨.**"
         )
         print(str(e))
         return
@@ -831,13 +831,19 @@ async def play(_, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📝 Ƥɭɑƴɭɩsʈ 📝", callback_data="playlist"),
-                InlineKeyboardButton("🎧 Ɱɘɳʋ 🎧", callback_data="menu"),
+                InlineKeyboardButton(
+                    "💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE")],
             ],
             [
-                    InlineKeyboardButton(text="🌐 Ƈɦɑɳɳɘɭ 🌐", url=f"https://t.me/ABHI_NETWORK1"),
-                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/SNEHABHI_SERVER"),
-            ],
+                    InlineKeyboardButton(text="💫 𝙲𝙷𝙰𝙽𝙽𝙴𝙻✨", url=f"https://t.me/ABHI_NETWORK1"),
+                    InlineKeyboardButton(text="💫𝚂𝚄𝙿𝙿𝙾𝚁T✨", url=f"https://t.me/SNEHABHI_SERVER"),
+            ],[
+                InlineKeyboardButton(
+                        "💫𝙾𝚆𝙽𝙴𝚁 𝚀𝚄𝙴𝙴𝙽✨", url=f"HTTP://T.ME/ABHI_IS_MINE")
+            ],[
+                InlineKeyboardButton(
+                        "💫𝙾𝚆𝙽𝙴𝚁 𝙺𝙸𝙽𝙶✨", url=f"https://t.me/SNEHU_IS_MINE")
+             ]   
  
         ]
     )
@@ -855,7 +861,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"**#⃣ Yøʋɤ Ʀɘʠʋɘsʈɘɗ Søɳʛ Qʋɘʋɘɗ ƛʈ Ƥøsɩʈɩøɳ** **{position}** ❗️",
+            caption=f"**#⃣ 𝑱𝑶 𝑨𝑨𝑷𝑵𝑬 𝑺𝑶𝑵𝑮 𝑷𝑳𝑨𝒀 𝑲𝑰𝒀𝑨 𝑯𝑨𝑰 𝑼𝑺𝑲𝑰 𝑷𝑶𝑺𝑰𝑻𝑶𝑵 𝒀𝑬 𝑯𝑨𝑰👉** **{position}** ❗️",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -877,7 +883,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="**▶️ Ƥɭɑƴɩɳʛ Ƭɦɘ Søɳʛ Vɩɑ Yøʋʈʋɓɘ ɩɳ Ɠɤøʋƥ Vøɩƈɘ Ƈɦɑʈ ...**".format(
+            caption="**𝑺𝑵𝑬𝑯𝑨𝑩𝑯𝑰 𝑺𝑬𝑹𝑽𝑬𝑹 𝑷𝑳𝑨𝒀𝑰𝑵𝑮 𝑺𝑶𝑵𝑮 𝑼𝑷𝑳𝑶𝑨𝑫𝑬𝑫 𝑩𝒀 @SNEHABHI_SERVER..**".format(
                 message.from_user.mention()
             ),
         )
@@ -1176,13 +1182,14 @@ async def lol_cb(b, cb):
     try:
         x,query,useer_id = typed_.split("|")      
     except:
-        await cb.message.edit("**🎶 Søɳʛ Ɲøʈ Føʋɳɗ, Ƭɤƴ Ʌɳøʈɦɘɤ Søɳʛ øɤ Ɱɑƴɓɘ Sƥɘɭɭ ɩʈ Ƥɤøƥɘɤɭƴ.**")
+        await cb.message.edit("**🎶 Beta jao song ka nam  acche se dekh kar ao.. aisa koi song nahi ha merepass 👀...uploaded by @SNEHABHI_SERVER ✨**")
+
         return
     useer_id = int(useer_id)
     if cb.from_user.id != useer_id:
         await cb.answer("❌ Yøʋ Ʌɩɳ Ɲøʈ Ƭɦɘ Ƥɘɤsøɳ Wɦø Ʀɘʠʋɘsʈɘɗ ʈø Ƥɭɑƴ Ƭɦɘ Søɳʛ ❗️", show_alert=True)
         return
-    await cb.message.edit("**🎧 Ʌɗɩtyɑ Ƥɭɑyeɤ ɩs Ɲøω Sʈɑɤʈɩɳʛ ...**")
+    await cb.message.edit("**🎧𝑺𝑵𝑬𝑯𝑨𝑩𝑯𝑰 𝑺𝑬𝑹𝑽𝑬𝑹 𝑰𝑺 𝑵𝑶𝑾 𝑷𝑳𝑨𝒀𝑬𝑹 ...**")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
