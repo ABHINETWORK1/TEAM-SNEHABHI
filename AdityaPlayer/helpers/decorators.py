@@ -20,8 +20,8 @@ from typing import Callable
 from pyrogram import Client
 from pyrogram.types import Message
 
-from SnehabhiServer.config import SUDO_USERS
-from SnehabhiServer.helpers.admins import get_administrators
+from AdityaPlayer.config import SUDO_USERS
+from AdityaPlayer.helpers.admins import get_administrators
 
 
 def errors(func: Callable) -> Callable:
