@@ -33,17 +33,17 @@ def _start(client, message):
                         "💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE")],
                 [
                     InlineKeyboardButton(
-                        "🌐 Ʋƥɗɑʈɘs", url=f"https://t.me/ABHI_NETWORK1"), 
-                    InlineKeyboardButton(
-                        "💫𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ✨", url=f"https://t.me/SNEHABHI_SERVER")
-                ],[
-                    InlineKeyboardButton(
                         "💫𝙾𝚆𝙽𝙴𝚁 𝙺𝙸𝙽𝙶✨", url=f"https://t.me/SNEHU_IS_MINE")
                 ],[
                     InlineKeyboardButton(
                         "💫𝙾𝚆𝙽𝙴𝚁 𝚀𝚄𝙴𝙴𝙽✨", url=f"HTTP://T.ME/ABHI_IS_MINE")
-                ]
-            ]
+                ],[
+                    InlineKeyboardButton(
+                         "💫𝚂𝚄𝙿𝙿𝙾𝚁T✨", url=f"https://t.me/SNEHABHI_SERVER")
+                    InlineKeyboardButton(
+                         "💫 𝙲𝙷𝙰𝙽𝙽𝙴𝙻✨", url=f"http://t.me/ABHI_NETWORK1")
+                ]     
+             ]    
         ),
         reply_to_message_id=message.message_id
         )
@@ -98,7 +98,7 @@ def map(pos):
         button = [
             [InlineKeyboardButton("💫 𝙼𝙰𝚂𝚃𝙸 𝙶𝚁𝙾𝚄𝙿 👈", url=f"https://t.me/LIVE_LIKE_LIFE")],
             [InlineKeyboardButton(text = '🌐 Ʋƥɗɑʈɘs', url=f"https://t.me/ABHI_NETWORK1"),
-             InlineKeyboardButton(text = '💫𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ✨', url=f"https://t.me/SNEHABHI_SERVER)],
+             InlineKeyboardButton(text = '💫𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ✨', url=f"https://t.me/SNEHABHI_SERVER")],
             [InlineKeyboardButton(text = '💫𝙾𝚆𝙽𝙴𝚁 𝙺𝙸𝙽𝙶✨', url=f"https://t.me/SNEHU_IS_MINE")],
             [InlineKeyboardButton(text = '💫𝙾𝚆𝙽𝙴𝚁 𝚀𝚄𝙴𝙴𝙽✨', url=f"HTTP://T.ME/ABHI_IS_MINE")],
             [InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}")]
