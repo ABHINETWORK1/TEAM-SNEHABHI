@@ -637,7 +637,7 @@ async def deezer(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "AdityaPlayer"
+        user.first_name = "SnehabhiPlayer"
     usar = user
     wew = usar.id
     try:
@@ -771,7 +771,7 @@ async def jiosaavn(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "AdityaPlayer"
+        user.first_name = "SnehabhiPlayer"
     usar = user
     wew = usar.id
     try:
