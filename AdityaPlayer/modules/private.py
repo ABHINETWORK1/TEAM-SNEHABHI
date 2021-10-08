@@ -39,7 +39,7 @@ def _start(client, message):
                         "💫𝙾𝚆𝙽𝙴𝚁 𝚀𝚄𝙴𝙴𝙽✨", url=f"HTTP://T.ME/ABHI_IS_MINE")
                 ],[
                     InlineKeyboardButton(
-                         "💫𝚂𝚄𝙿𝙿𝙾𝚁T✨", url=f"https://t.me/SNEHABHI_SERVER")
+                         "💫𝚂𝚄𝙿𝙿𝙾𝚁T✨", url=f"https://t.me/SNEHABHI_SERVER"),
                     InlineKeyboardButton(
                          "💫 𝙲𝙷𝙰𝙽𝙽𝙴𝙻✨", url=f"http://t.me/ABHI_NETWORK1")
                 ]     
