@@ -31,7 +31,7 @@ bot = Bot(
     API_ID,
     API_HASH,
     bot_token=BOT_TOKEN,
-    plugins=dict(root="SnehabhiServer.modules"),
+    plugins=dict(root="AdityaPlayer.modules"),
 )
 
 bot.start()
